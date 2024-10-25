@@ -34,7 +34,7 @@ function GET_ELEMENT_BY_SYMBOL () {
 function GET_ELEMENT_WITH_PROPERTIES () {
   # $1 could be a whole number, single letter, or one word
 
-  case $1 in
+  case "$1" in
     [[ $1 =~ ^[0-9]+$ ]]) GET_ELEMENT_BY_ATOMIC_NUMBER $1;;
     ) GET_ELEMENT_BY_NAME $1;;
     ) GET_ELEMENT_BY_SYMBOL $1;;

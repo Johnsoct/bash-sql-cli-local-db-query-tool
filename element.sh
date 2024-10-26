@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CALL_ARGUMENT=$1
-PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
+PSQL="psql --username=<user> --dbname=periodic_table -t --no-align -c"
 
 # Arguments
 # $1 can be a whole number, single letter, or one word

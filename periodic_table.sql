@@ -44,7 +44,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: elements; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: elements; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.elements (
@@ -54,10 +54,10 @@ CREATE TABLE public.elements (
 );
 
 
-ALTER TABLE public.elements OWNER TO freecodecamp;
+ALTER TABLE public.elements OWNER TO postgres;
 
 --
--- Name: properties; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: properties; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.properties (
@@ -69,10 +69,10 @@ CREATE TABLE public.properties (
 );
 
 
-ALTER TABLE public.properties OWNER TO freecodecamp;
+ALTER TABLE public.properties OWNER TO postgres;
 
 --
--- Name: types; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: types; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.types (
@@ -81,10 +81,10 @@ CREATE TABLE public.types (
 );
 
 
-ALTER TABLE public.types OWNER TO freecodecamp;
+ALTER TABLE public.types OWNER TO postgres;
 
 --
--- Data for Name: elements; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: elements; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.elements VALUES (1, 'H', 'Hydrogen');
@@ -100,7 +100,7 @@ INSERT INTO public.elements VALUES (10, 'Ne', 'Neon');
 
 
 --
--- Data for Name: properties; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: properties; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.properties VALUES (1, 1.008, -259.1, -252.9, 1);
@@ -116,7 +116,7 @@ INSERT INTO public.properties VALUES (10, 20.18, -248.6, -246.1, 1);
 
 
 --
--- Data for Name: types; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.types VALUES (1, 'nonmetal');
@@ -125,7 +125,7 @@ INSERT INTO public.types VALUES (3, 'metalloid');
 
 
 --
--- Name: elements elements_atomic_number_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: elements elements_atomic_number_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.elements
@@ -133,7 +133,7 @@ ALTER TABLE ONLY public.elements
 
 
 --
--- Name: elements elements_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: elements elements_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.elements
@@ -141,7 +141,7 @@ ALTER TABLE ONLY public.elements
 
 
 --
--- Name: elements elements_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: elements elements_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.elements
@@ -149,7 +149,7 @@ ALTER TABLE ONLY public.elements
 
 
 --
--- Name: elements elements_symbol_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: elements elements_symbol_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.elements
@@ -157,7 +157,7 @@ ALTER TABLE ONLY public.elements
 
 
 --
--- Name: properties properties_atomic_number_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: properties properties_atomic_number_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.properties
@@ -165,7 +165,7 @@ ALTER TABLE ONLY public.properties
 
 
 --
--- Name: properties properties_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: properties properties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.properties
@@ -173,7 +173,7 @@ ALTER TABLE ONLY public.properties
 
 
 --
--- Name: types types_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: types types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.types
@@ -181,7 +181,7 @@ ALTER TABLE ONLY public.types
 
 
 --
--- Name: properties properties_atomic_number_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: properties properties_atomic_number_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.properties
@@ -189,7 +189,7 @@ ALTER TABLE ONLY public.properties
 
 
 --
--- Name: properties properties_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: properties properties_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.properties
